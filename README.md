@@ -1,5 +1,6 @@
-#Responsive Menu Burger
+Responsive Menu Burger
 
-###Use git clone
+For clone this repo just follow this command :
 
-#####git clone https://github.com/Kirito-san-88/Responsive-menu-burger.git
+open terminal and write this.
+git clone https://github.com/Kirito-san-88/Responsive-menu-burger.git
