@@ -102,7 +102,7 @@ a:hover {
   color: var(--light);
   font-size: var(--font-size-large);
 }
-.menu {
+.menu/*,.dropdown-content*/ {
   list-style: none;
   text-decoration: none;
 }
@@ -166,7 +166,56 @@ a:hover {
   animation: mobileMenuFadeIn calc(var(--transition-time) * 2) forwards;
 }
 
+/***** dropdown *****/
+/*
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--light);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  animation: dropdownFadeIn calc(var(--transition-time) * 2) forwards;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content li {
+  float: none;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  margin: 0 auto;
+  width: 60%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown {
+  display: block;
+}
+*/
+/******* fin dropdown *******/
+
 @media screen and (min-width: 640px) {
+  /**************  dropdown ********************/
+  /*.dropdown-content {
+    display: none;
+    position: absolute;
+    width: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: var(--dark);
+  }*/
+  /************** fin dropdown ********************/
   .burger {
     display: none;
   }
@@ -203,5 +252,16 @@ a:hover {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@keyframes dropdownFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
